@@ -24,11 +24,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [ Buffer Clone ] <a name="about-project"></a>
+# 📖 Buffer Clone <a name="about-project"></a>
 
 > A clone of buffer
 
-**[Buffer Clone]** is a ruby project to learn ruby on rails framework ( The gem of programming )
+** Buffer Clone ** is a ruby project to learn ruby on rails framework ( The gem of programming )
 
 ## 🛠 Built With <a name="built-with"></a>
 
