@@ -1,10 +1,7 @@
-<h1> Sign Up </h1>
-<%= form_with model: @user, url: sign_up_path, data: { turbo: false} do |form| %>
-    <%= render "shared/formerrors", form: form %>
-    <div class="mb-3">
-        <%= form.label :email, class: "form-label" %>
-        <%= form.text_field :email, class: "form-control", id: "exampleFormControlInput1", placeholder: "steve@apple.com" %>
-    </div>
+<h1> Reset yout Password </h1>
+
+<%= form_with model: @user, url: password_reset_edit_path(token: params[:token]) do |form| %>
+    <%= render "shared/formerrors", form: form%>
     <div class="mb-3">
         <%= form.label :password, class: "form-label" %>
         <%= form.password_field :password, class: "form-control", id: "exampleFormControlInput2", placeholder: "password" %>
@@ -13,6 +10,5 @@
         <%= form.label :password_confirmation, class: "form-label" %>
         <%= form.password_field :password_confirmation, class: "form-control", placeholder: "confirm password" %>
     </div>
-
-    <%= form.submit "Sign Up", class:"btn" %>
+    <%= form.submit "Reset Password", class:"btn" %>
 <% end %>
